@@ -12,8 +12,5 @@ public class ConsoleExercises {
         System.out.printf("Nice to meet you %s %n", nameInput);
         input.close();
         //adding contribution because im not getting mine for some reason
-
-
-
     }
 }
