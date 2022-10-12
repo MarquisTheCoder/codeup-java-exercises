@@ -1,9 +1,10 @@
+package src;
 
 import java.util.Scanner;
 
 public class Bob {
     public static void main(String[] args){
-        System.out.print("Say something to Bob: ");
+        System.out.print("Say something to src.Bob: ");
         Scanner scanner = new Scanner(System.in);
         String dialogue = scanner.nextLine();
 

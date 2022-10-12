@@ -1,3 +1,5 @@
+package src;
+
 public class StringExercise {
     public static void main(){
 

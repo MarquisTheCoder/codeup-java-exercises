@@ -1,5 +1,4 @@
-
-
+package src;
 
 interface Enemy{
     public void Attack();
