@@ -7,34 +7,33 @@ import java.util.Scanner;
 
 public class ConsoleExercises {
     public static void main(String[] args){
-//        Scanner input = new Scanner(System.in);
-//        System.out.println("Enter your name NOW!: ");
-//        String nameInput = input.nextLine();
-//        System.out.printf("Nice to meet you %s %n", nameInput);
-//        input.close();
-        //adding contribution because im not getting mine for some reason
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your name NOW!: ");
+        String nameInput = input.nextLine();
+        System.out.printf("Nice to meet you %s %n", nameInput);
+        input.close();
 
-//        Scanner scanner = new Scanner(System.in);
-//        int inputRegister = scanner.nextInt();
-//        scanner.close();
+        Scanner scanner = new Scanner(System.in);
+        int inputRegister = scanner.nextInt();
+        scanner.close();
 
-//        Scanner threeWords = new Scanner(System.in);
-//        String firstWord = threeWords.next();
-//        String secondWord = threeWords.next();
-//        String thirdWord = threeWords.next();
-//
-//        System.out.println(firstWord);
-//        System.out.println(secondWord);
-//        System.out.println(thirdWord);
-//
-//        threeWords.close();
-//
-//        System.out.println("This is a break string");
-//
-//        Scanner scanner = new Scanner(System.in);
-//        String sentence = scanner.nextLine();
-//        System.out.println(sentence);
-//
+        Scanner threeWords = new Scanner(System.in);
+        String firstWord = threeWords.next();
+        String secondWord = threeWords.next();
+        String thirdWord = threeWords.next();
+
+        System.out.println(firstWord);
+        System.out.println(secondWord);
+        System.out.println(thirdWord);
+
+        threeWords.close();
+
+        System.out.println("This is a break string");
+
+        Scanner scanner = new Scanner(System.in);
+        String sentence = scanner.nextLine();
+        System.out.println(sentence);
+
 
 
         /*Getting the classroom perimeter with scanners*/
