@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 
 public class ConsoleExercises {
+
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name NOW!: ");
@@ -30,7 +31,6 @@ public class ConsoleExercises {
 
         System.out.println("This is a break string");
 
-        Scanner scanner = new Scanner(System.in);
         String sentence = scanner.nextLine();
         System.out.println(sentence);
 
@@ -38,7 +38,6 @@ public class ConsoleExercises {
 
         /*Getting the classroom perimeter with scanners*/
         System.out.print("x: ");
-        Scanner scanner = new Scanner(System.in);
         int x = Integer.parseInt(scanner.next());
         System.out.print("y: ");
         int y = Integer.parseInt(scanner.next());
