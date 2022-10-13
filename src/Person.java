@@ -1,15 +1,17 @@
 package src;
 
+
+
 public class Person {
     public static String race = "Human";
     public static boolean wasBorn = true;
 
+    public String name;
+    public int health = 100;
     public Person(){
         System.out.println("The person is being created");
-
     }
-    private String name;
-    public int health = 100;
+
 
     public String getName(){
         return this.name;
