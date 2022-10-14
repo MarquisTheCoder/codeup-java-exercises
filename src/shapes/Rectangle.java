@@ -1,35 +1,40 @@
 package src.shapes;
 
-public class Rectangle {
-    protected int length;
-    protected int width;
+import org.w3c.dom.css.Rect;
 
-    public Rectangle(int length, int width){
-        this.length = length;
-        this.width = width;
+public class Rectangle extends Quadrilateral{
+//    protected int length;
+//    protected int width;
+
+    public Rectangle(double width, double length){
+        super(width, length);
     }
-    public int area(){
-        System.out.println("Rectangle");
-        return this.width * this.length;
-    }
-    public int perimeter(){
-        System.out.println("Rectangle");
+//    public int area(){
+//        System.out.println("Rectangle");
+//        return this.width * this.length;
+//    }
+//    public int perimeter(){
+//        System.out.println("Rectangle");
+//        return this.width * 2 + this.length * 2;
+//    }
+    public double getPerimeter(){
         return this.width * 2 + this.length * 2;
     }
+    public double getArea(){
+       return this.width * this.length;
+    }
 
 }
-
-class Square extends Rectangle{
-    public Square(int side){
-        super(side,side);
-
+class Square extends Quadrilateral{
+    public Square(double width, double length){
+        super(width, length);
     }
-    public int perimeter(){
-        System.out.println("Square");
-        return this.width * 4;
+
+    public double getPerimeter(){
+        return this.width * 2 + this.length * 2;
     }
-    public int area(){
-        System.out.println("Square");
-        return (int) Math.pow(this.width, 2);
+    public double getArea(){
+        return this.width * this.length;
     }
 }
+
