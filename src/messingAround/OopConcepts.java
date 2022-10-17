@@ -1,6 +1,21 @@
 package src.messingAround;
 
 public class OopConcepts {
+    public static void main(String[] args){
+      int[] numbers = {1,2,3};
+
+      try{
+          System.out.println(numbers[100]);
+      }catch(ArrayIndexOutOfBoundsException e){
+          e.printStackTrace();
+          System.out.println("This is out of bounds");
+      }catch(Exception e){
+          System.out.println("Caught  generic exception!");
+      }finally {
+          System.out.println("This will always run.");
+      }
+    }
+
 }
 
 class Vehicle{

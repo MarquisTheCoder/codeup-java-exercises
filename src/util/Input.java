@@ -17,21 +17,36 @@ public class Input {
         return false;
     }
 
-    public void getInt(int minInt, int maxInt){
-        System.out.println("getting the next int");
-        int userInput;
-        do{
-            userInput = Integer.parseInt(this.scanner.next());
-        }while(userInput < minInt || userInput > maxInt);
-
+    public int getInt(int minInt, int maxInt) throws NumberFormatException{
+        int userInput = Integer.MIN_VALUE;
+        while(userInput < minInt || userInput > maxInt){
+            System.out.print("find the correct integer: ");
+            try{
+                userInput = Integer.parseInt(scanner.next());
+            }catch (NumberFormatException e){
+                System.out.println(e.getMessage());
+                System.out.println("Enter another number");
+            }
+        }
+        return userInput;
+//        do{
+//            userInput = Integer.parseInt(this.scanner.next());
+//        }while(userInput < minInt || userInput > maxInt);
+//        return userInput;
     }
-    public void getDouble(double minDub, double maxDub){
-        System.out.println("getting the next int");
-        double userInput;
-        do{
-            userInput = Double.parseDouble(this.scanner.next());
-        }while(userInput < minDub && userInput > maxDub);
-
+    public double getDouble(double minDub, double maxDub) throws NumberFormatException{
+        System.out.println("getting the next double");
+        double userInput = Double.MIN_VALUE;
+        while(userInput < minDub || userInput > maxDub){
+            System.out.print("find the correct double: ");
+            try{
+                userInput = Double.parseDouble(scanner.next());
+            }catch (NumberFormatException e){
+                System.out.println(e.getMessage());
+                System.out.println("Enter another number");
+            }
+        }
+        return userInput;
     }
 
 
