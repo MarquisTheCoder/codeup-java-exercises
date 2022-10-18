@@ -3,14 +3,15 @@ import java.util.Scanner;
 
 
 public class Input {
-    public static Scanner scanner = new Scanner(System.in);
+
+    private static Scanner scanner = new Scanner(System.in);
 
     public String getString(){
-        String userInput = this.scanner.nextLine();
+        String userInput = scanner.nextLine();
         return userInput;
     }
     public boolean yesNo(){
-        String userInput = this.scanner.nextLine();
+        String userInput = scanner.nextLine();
         if(userInput.equals("y") || userInput.equals("yes") || userInput.startsWith("y")){
             return true;
         }
@@ -46,7 +47,9 @@ public class Input {
                 System.out.println("Enter another number");
             }
         }
+
         return userInput;
+
     }
 
 

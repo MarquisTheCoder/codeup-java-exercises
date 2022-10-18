@@ -3,6 +3,7 @@ package src;
 import java.util.Scanner;
 
 public class ControlFlowExercises {
+
     public static void main(String[] args){
 //        for(int i = 5; i < 16; i++){
 //            System.out.print(String.format("%d ", i));
@@ -71,17 +72,5 @@ public class ControlFlowExercises {
         }else{
             System.out.println("Not a valid GRADE DUDE!");
         }
-
-//        if(numberGrade >= 100){
-//            System.out.println("A");
-//        }else{
-//            System.out.println("You failed!");
-//        }
-
     }
-
-
-    //FIZZBUZZ
-
-
 }
