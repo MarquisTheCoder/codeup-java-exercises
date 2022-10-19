@@ -11,11 +11,13 @@ public class Person {
     public Person(){
         System.out.println("The person is being created");
     }
-
-
-    public String getName(){
-        return this.name;
+    public Person(String name){
+        this.name = name;
+        System.out.println("Their is a person named " + name + " being created!");
     }
+
+    public String getName(){ return this.name; }
+
     public void setName(String newName){
         this.name = newName;
     }
