@@ -3,12 +3,28 @@ package src;
 
 import src.*;
 
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArraysExercises {
     public static void main(String [] args) {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
+
+        int[] numberss = new int[5];
+        numberss[0] = 1;
+        numberss[1] = 2;
+        numberss[2] = 4;
+        numberss[3] = 5;
+        numberss[4] = 1;
+
+        for(int number: numberss){
+            System.out.println(number);
+        }
+
+
+
 
 //        Person[] people = new Person[3];
 //        people[0] = new Person();
@@ -18,14 +34,27 @@ public class ArraysExercises {
 //        people[2] = new Person();
 //        people[2].name = "Moonbop";
 //        int result = 1 > 2 ? 1 : 2;
-          Person john = new Person();
+      Person john = new Person();
 
-          Person[] people = new Person[4];
+      ArrayList<Person> peeps = new ArrayList<>();
 
-          Person[] newPeople = addPerson(john, people);
+      peeps.add(new Person("Josh"));
+      peeps.add(new Person("Sandy"));
+      peeps.add(new Person("Wendy"));
 
-          newPeople[newPeople.length -1].name = "Marquis";
-          newPeople[newPeople.length -1].sayHello();
+      peeps.forEach(person -> System.out.println(person.name));
+      peeps.forEach(person -> {
+          person.damagePlayer(10);
+          System.out.println(person.health);
+      });
+
+
+      Person[] people = new Person[4];
+
+      people = addPerson(john, people);
+
+//      newPeople[newPeople.length -1].name = "Marquis";
+//      newPeople[newPeople.length -1].sayHello();
 
     }
 

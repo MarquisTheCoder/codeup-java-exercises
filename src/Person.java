@@ -30,14 +30,10 @@ public class Person {
     public void damagePlayer(int damage){
         this.health -= damage;
     }
-
-    public static void main(String [] args){
-
-        Person me = new Person();
-        me.name = "Marquis";
-        me.sayHello();
-        me.damagePlayer(10);
-        System.out.println(me.checkHealth());
-
+    public void divorce(Home home, Person spouse){
+        System.out.printf("%s is divorcing %s\n now %s is the home owner.\n",
+                this.name, spouse.name, spouse.name);
+        home.setOwner(spouse);
     }
+
 }
