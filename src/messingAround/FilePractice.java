@@ -13,8 +13,6 @@ public class FilePractice {
 
 
     public static void main(String[] args) throws FileNotFoundException {
-      File currentDirectory = new File(".");
-      listFiles(currentDirectory);
     }
 
     private static void listFiles(File directory) throws FileNotFoundException{
