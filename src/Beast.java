@@ -1,19 +1,37 @@
 package src;
 
-public class Beast {
+import java.util.Comparator;
+
+public class Beast implements Comparator<Beast> {
 
     private int armorClass;
     private int hitPoints;
     private int damage;
+    private String name;
 
     public Beast(){}
 
-    public Beast(int armorClass, int hitPoints, int damage){
-        this.armorClass = armorClass;
-        this.hitPoints = hitPoints;
-        this.damage = damage;
+    public int compare(Beast one, Beast two){
+        return Integer.compare(one.hitPoints, two.hitPoints);
     }
 
+    public Beast(String name){
+        this.name = name;
+        this.armorClass = 50;
+        this.hitPoints = 50;
+        this.damage = 50;
+    }
+
+    public Beast(String name, int hitPoints, int armorClass){
+        this.name = name;
+        this.armorClass = armorClass;
+        this.hitPoints = hitPoints;
+        this.damage = 20;
+    }
+// THIS IS A LINE
+    public String getName(){
+        return this.name;
+    }
     public int getArmorClass() {
         return armorClass;
     }

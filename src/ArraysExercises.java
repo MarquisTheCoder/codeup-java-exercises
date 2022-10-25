@@ -22,10 +22,6 @@ public class ArraysExercises {
         for(int number: numberss){
             System.out.println(number);
         }
-
-
-
-
 //        Person[] people = new Person[3];
 //        people[0] = new Person();
 //        people[0].name = "Josh";
@@ -48,7 +44,6 @@ public class ArraysExercises {
           System.out.println(person.health);
       });
 
-
       Person[] people = new Person[4];
 
       people = addPerson(john, people);
@@ -64,8 +59,6 @@ public class ArraysExercises {
         newPeople[newPeople.length-1] = newPerson;
         return newPeople;
     }
-
-
 
 }
 
