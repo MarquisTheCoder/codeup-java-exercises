@@ -3,9 +3,7 @@ import java.util.Scanner;
 
 
 public class Input {
-
     private static Scanner scanner = new Scanner(System.in);
-
     public String getString(){
         System.out.print("Enter an input: ");
         String userInput = scanner.nextLine();
@@ -24,27 +22,34 @@ public class Input {
         }
         return false;
     }
-
-    public int getInt(int minInt, int maxInt) throws NumberFormatException{
+    public int getInt(int minInt, int maxInt){
         int userInput = 0;
-
        do{
             System.out.print("find the correct integer: ");
             try{
+
                 userInput = Integer.parseInt(scanner.next());
+
             }catch (NumberFormatException e){
+
                 System.out.println(e.getMessage());
                 System.out.println("Enter another number");
+
             }
+
         } while(userInput < minInt || userInput > maxInt);
         System.out.printf("Correct int found: %d ", userInput);
         return userInput;
+
 //        do{
 //            userInput = Integer.parseInt(this.scanner.next());
 //        }while(userInput < minInt || userInput > maxInt);
 //        return userInput;
+
     }
-    public double getDouble(double minDub, double maxDub) throws NumberFormatException{
+
+    public double getDouble(double minDub, double maxDub){
+
         System.out.println("\ngetting the next double");
         double userInput = 0;
         do{

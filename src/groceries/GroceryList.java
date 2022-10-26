@@ -1,4 +1,4 @@
-package src;
+package src.groceries;
 
 import src.util.Input;
 
