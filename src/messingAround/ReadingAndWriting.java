@@ -43,9 +43,10 @@ public class ReadingAndWriting {
                 Arrays.stream(Objects.requireNonNull(file1.listFiles())).
                         toList().forEach(System.out::println);
             }
-
+            //File object being created with the path of the HighLow class
             File highLow = new File("./src/HighLow.java");
 
+            //.exist() checks if file at path for the File object exist
             if(highLow.exists()){
 
                 try{
@@ -69,6 +70,8 @@ public class ReadingAndWriting {
                 }
             }
 
+
+                //List object in which most <CollectionType>List are subclasses
                 List<String> newContent = Arrays.asList("new", "Content");
                 Scanner userChoice = new Scanner(System.in);
                 String input;
