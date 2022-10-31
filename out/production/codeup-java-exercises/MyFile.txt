@@ -1,2 +1,6 @@
 new
 Content
+writing to the new file
+this is a test to see if i can write to a file automatically
+I'm going to use this to make my own old school terminal editor later
+exit
